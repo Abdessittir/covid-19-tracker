@@ -1,0 +1,60 @@
+.dashboard section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.back{
+    margin: 20px;
+    cursor: pointer;
+}
+.dashboard > h1{
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dashboard section > div{
+    flex: 0.3;
+    min-width: 300px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+}
+.row > p{
+    padding: 10px;
+}
+.row_title{
+    width: 60%;
+    font-weight: 600;
+    font-size: 20px;
+}
+.map{
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
+    margin: 50px auto;
+}
+.form{
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading{
+    height: 100vh;
+    padding: 20px;
+}
+.box{
+    height: 100% !important;
+}
+.Skeleton{
+    height: 33% !important;
+}
