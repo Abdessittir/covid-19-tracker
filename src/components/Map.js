@@ -5,10 +5,6 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Map extends Component {
 
-  constructor(props){
-    super(props);
-  }
-
   render() {
     return (
       // Important! Always set the container height explicitly

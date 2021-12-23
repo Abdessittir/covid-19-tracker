@@ -1,7 +1,6 @@
 import "../styles/Home.css";
 import { useState } from "react";
 import countries from "../Countries";
-import { useCountry } from "../contexts/CountryProvider";
 
 function Home(){
     return (
@@ -34,6 +33,7 @@ export function SearchForm(){
                                 <SearchQuery key={country} query={country} />
                             );
                         }
+                        return null;
                     })
                 }
             </div>
@@ -41,7 +41,6 @@ export function SearchForm(){
     );
 }
 function SearchQuery({query}){
-    const { setCountry } = useCountry();
     function handleClick(){
         localStorage.setItem("country", JSON.stringify(query));
         window.location.reload();
