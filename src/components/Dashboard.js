@@ -44,7 +44,7 @@ function Dashboard(){
 
             fetchData();
         }
-    });
+    }, [country]);
 
     function handleClick(){
         localStorage.removeItem("country");
